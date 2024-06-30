@@ -1,4 +1,6 @@
-# passwordGenerator v1.0
+<p align="center">
+  # passwordGenerator v1.0
+</p>
 
 <p align="center">
   <img src="https://github.com/D1se0/passwordGenerator/assets/164921056/65de4e4f-4db1-40e7-9095-a406db50b6e3" alt="Directorybrute" width="400">
