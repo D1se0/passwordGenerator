@@ -4,26 +4,26 @@
   <img src="https://github.com/D1se0/passwordGenerator/assets/164921056/65de4e4f-4db1-40e7-9095-a406db50b6e3" alt="Directorybrute" width="400">
 </p>
 
-## Descripción
+## Description
 
-`passwordGenerator` es una herramienta de línea de comandos para generar contraseñas seguras con opciones de codificación y cálculo de tiempo estimado para crackearlas. Esta herramienta está diseñada para ser fácil de usar y altamente configurable para satisfacer diversas necesidades de seguridad.
+`passwordGenerator` is a command line tool for generating strong passwords with encryption options and estimated time to crack them. This tool is designed to be easy to use and highly configurable to meet various security needs.
 
-## Características
+## Characteristics
 
-- Generación de contraseñas seguras con longitud configurable.
-- Inclusión opcional de caracteres especiales.
-- Codificación de contraseñas en múltiples formatos: `SHA1`, `SHA256`, `SHA512`, `MD5`, `UNIX` (shadow) y `MySQL`.
-- Cálculo del tiempo estimado para crackear la contraseña.
-- Exportación de resultados a un archivo de texto.
+- Generation of secure passwords with configurable length.
+- Optional inclusion of special characters.
+- Password encryption in multiple formats: `SHA1`, `SHA256`, `SHA512`, `MD5`, `UNIX` (shadow) and `MySQL`.
+- Calculation of the estimated time to crack the password.
+- Export of results to a text file.
 
-## Requisitos
+## Requirements
 
 - `Python 3`
-- Paquetes de Python: `argparse`, `passlib`, `colorama`
+- Python packages: `argparse`, `passlib`, `colorama`
 
-## Instalación
+## Facility
 
-Ejecuta el siguiente script `requirements.sh` para instalar todos los requisitos y copiar el script a `/usr/bin`:
+Run the following script `requirements.sh` to install all requirements and copy the script to `/usr/bin`:
 
 ```bash
 chmod +x requirements.sh
@@ -33,9 +33,9 @@ chmod +x requirements.sh
 ./requirements.sh
 ```
 
-## Uso
+## Use
 
-### `-h` o `--help` para ver la informacion de la herramienta:
+### `-h` or `--help` to view the tool information:
 
 ```bash
 python3 passwordGenerator.py -h
@@ -45,74 +45,74 @@ Info:
 
 `-h`, `--help` = show this help message and exit
 
-`-l` [LENGTH], `--length` [LENGTH] = Longitud de la contraseña (default: 8)
+`-l` [LENGTH], `--length` [LENGTH] = Password length (default: 8)
 
-`-s`, `--special` = Incluir caracteres especiales
+`-s`, `--special` = Include special characters
 
-`-f` FILE, `--file` FILE = Exportar la contraseña a un archivo de texto
+`-f` FILE, `--file` FILE = Export password to a text file
 
-`-e` {sha1,sha256,sha512,md5,unix_passwd,mysql,shadow}, `--encode` {sha1,sha256,sha512,md5,unix_passwd,mysql,shadow} = Tipo de codificación/hash para la contraseña
+`-e` {sha1,sha256,sha512,md5,unix_passwd,mysql,shadow}, `--encode` {sha1,sha256,sha512,md5,unix_passwd,mysql,shadow} = Encoding/hash type for password
 
-`-c`, `--time-crack` = Mostrar tiempo estimado para crackear la contraseña
+`-c`, `--time-crack` = Show estimated time to crack password
 
-Después de la instalación, puedes ejecutar el script desde cualquier lugar con el comando passwordGenerator.
+After installation, you can run the script from anywhere with the passwordGenerator command.
 
-### Ejemplos de Comandos
+### Command Examples
 
-Generar una contraseña de 32 caracteres:
+Generate a 32-character password:
 
 ```bash
 python3 passwordGenerator.py -l 32
 ```
 
-Generar una contraseña de 16 caracteres incluyendo caracteres especiales:
+Generate a 16-character password including special characters:
 
 ```bash
 python3 passwordGenerator.py -l 16 -s
 ```
 
-Generar una contraseña de 12 caracteres y mostrar el tiempo estimado para crackearla:
+Generate a 12-character password and display the estimated time to crack it:
 
 ```bash
 python3 passwordGenerator.py -l 12 -c
 ```
 
-Generar una contraseña de 20 caracteres y codificarla en SHA256:
+Generate a 20 character password and encode it in SHA256:
 
 ```bash
 python3 passwordGenerator.py -l 20 -e sha256
 ```
 
-### Generar una contraseña de 24 caracteres, codificarla en UNIX (shadow) y mostrar el tiempo estimado para crackearla:
+### Generate a 24-character password, encode it in UNIX (shadow) and display the estimated time to crack it:
 
 ```bash
 python3 passwordGenerator.py -l 24 -e unix_passwd -c
 ```
 
-### Generar una contraseña de 20 caracteres y exportar los resultados a un archivo de texto:
+### Generate a 20-character password and export the results to a text file:
 
 ```bash
 python3 passwordGenerator.py -l 20 -f resultados.txt
 ```
 
-## Contribución
+## Contribution
 
-### Si deseas contribuir a este proyecto, por favor sigue los siguientes pasos:
+### If you wish to contribute to this project, please follow the following steps:
 
-Haz un fork del repositorio.
+Fork the repository.
 
-Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
+Create a new branch (`git checkout -b feature/new-feature`).
 
-Realiza tus cambios y haz commit (`git commit -am 'Añadir nueva funcionalidad'`).
+Make your changes and commit (`git commit -am 'Add new functionality'`).
 
-Haz push a la rama (`git push origin feature/nueva-funcionalidad`).
+Push to the branch (`git push origin feature/new-feature`).
 
-Crea un nuevo `Pull Request`.
+Create a new `Pull Request`.
 
-## Licencia
+## License
 
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
-## Autor
+## Author
 
-`passwordGenerator` v1.0 fue desarrollado por Diseo (@d1se0).
+`passwordGenerator` v1.0 was developed by Diseo (@d1se0).
