@@ -100,8 +100,11 @@ python3 passwordGenerator.py -l 20 -f resultados.txt
 Haz un fork del repositorio.
 
 Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
+
 Realiza tus cambios y haz commit (`git commit -am 'Añadir nueva funcionalidad'`).
+
 Haz push a la rama (`git push origin feature/nueva-funcionalidad`).
+
 Crea un nuevo `Pull Request`.
 
 ## Licencia
