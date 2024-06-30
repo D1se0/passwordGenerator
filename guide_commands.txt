@@ -1,0 +1,7 @@
+# Para poder utilizar la herramienta y que la puedas ejecutar desde cualquier parte de la terminal instala lo siguiente...
+
+$ ./requirements.sh
+
+# Una vez echo lo anterior ejecuta lo siguiente para comprobar que funciona...
+
+$ passwordGenerator -h
